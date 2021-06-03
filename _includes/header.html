@@ -1,0 +1,17 @@
+{% assign current = page.url | replace: ".html", "" | downcase | split: "/" %}
+
+<header class="Header">
+  <div class="Wrapper Wrapper--bleed">
+    <div class="Header-inner">
+      <div class="Header-logotype">
+        {% include logotype.html location="header" %}
+      </div>
+
+      <nav class="MainNav" style="color:{{ page.color1 }};">
+        <ul class="MainNav-list">
+          <li class="MainNav-item"><a href="{% link _articles/videokonferens-sa-ser-du-bra-ut-pa-avstand.md %}" class="MainNav-link{% if current[1] == "videokonferens-sa-ser-du-bra-ut-pa-avstand" %} is-current{% endif %}">Videokonferens</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

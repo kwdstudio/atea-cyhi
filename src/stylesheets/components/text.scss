@@ -1,0 +1,53 @@
+@import "../config/fonts";
+@import "../config/spacing";
+
+@import "../helpers/typography";
+
+//
+// Component: Text
+// =============================================================================
+$component-name: "Text";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  &--separated {
+    #{$component-base}-body {
+      @include styles-from-map((
+        padding-bottom: $spacing-deca-gentle,
+        margin-bottom: $spacing-deca-gentle,
+      ));
+
+      border-bottom: 1px solid color(neutral, 8);
+    }
+  }
+
+  h2 {
+    @include typography($inter, deca-gentle, tight);
+    @include styles-from-map((
+      margin-top: $spacing-deca-gentle,
+      margin-bottom: $spacing-milli-gentle,
+    ));
+
+    font: inherit;
+    font-weight: $bold-font-weight;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    @include typography($inter, base-gentle, tight);
+
+    text-decoration: underline;
+  }
+
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+
+    font: inherit;
+    text-decoration: underline;
+  }
+}

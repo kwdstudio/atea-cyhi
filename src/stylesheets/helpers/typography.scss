@@ -1,0 +1,18 @@
+@import "../config/typography";
+
+@import "repetitivo/helpers/styles-from-map";
+
+$inter: (
+  font-family: ("Inter", "Times New Roman", serif),
+  font-size-scales: $scale-inter,
+  line-height-scales: $scale-inter-line-height,
+);
+
+@mixin typography($font, $size, $line-height) {
+  font-family: map-get($font, font-family);
+
+  @include styles-from-map((
+    font-size: map-get(map-get($font, font-size-scales), $size),
+    line-height: map-get(map-get($font, line-height-scales), $line-height),
+  ));
+}

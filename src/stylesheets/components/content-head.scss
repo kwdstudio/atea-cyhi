@@ -1,0 +1,34 @@
+@import "../config/fonts";
+@import "../config/spacing";
+
+@import "../functions/color";
+
+@import "../helpers/typography";
+
+@import "repetitivo/helpers/respond-to";
+@import "repetitivo/helpers/styles-from-map";
+
+//
+// Component: Content Head
+// =============================================================================
+$component-name: "ContentHead";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  @include styles-from-map((
+    margin-top: $spacing-kilo-gentle,
+    margin-bottom: $spacing-kilo-gentle,
+  ));
+
+  // Element: Heading
+  // ---------------------------------------------------------------------------
+  &-heading {
+    @include typography($inter, hecto-gentle, tight);
+  }
+
+  // Element: Lead
+  // ---------------------------------------------------------------------------
+  &-lead {
+    @include typography($inter, hecto-gentle, tight);
+  }
+}

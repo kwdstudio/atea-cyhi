@@ -1,0 +1,39 @@
+@import "../config/spacing";
+
+@import "repetitivo/helpers/respond-to";
+@import "repetitivo/helpers/styles-from-map";
+
+//
+// Component: Header
+// =============================================================================
+$component-name: "Header";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  background: #000;
+
+  @include styles-from-map((
+    margin-bottom: $spacing-deca-gentle,
+  ));
+
+  // Element: Inner
+  // ---------------------------------------------------------------------------
+  &-inner {
+    @include respond-to(m) {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  // Element: Logotype
+  // ---------------------------------------------------------------------------
+  &-logotype {
+    margin-bottom: 0.5em;
+
+    @include respond-to(m) {
+      width: 50%;
+
+      margin-bottom: 0;
+    }
+  }
+}

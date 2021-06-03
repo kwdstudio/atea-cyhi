@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="sv">
+  <head>
+    <meta charset="utf-8">
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Can you handle it?</title>
+
+    <meta name="description" content="TODO">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if site.prevent_crawling %}
+      <meta name="robots" content="noindex, nofollow">
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ site.assets_base_url }}/stylesheets/main.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="canonical" href="{{ site.base_url }}{{ page.url }}">
+
+    <script>(function(k,w,d,s,t,u,d,i,o){k[w]=k[w].replace('no-js','has-js')}(document.documentElement,'className'))</script>
+
+  </head>
+  <body>
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script src="{{ site.assets_base_url }}/javascripts/application.js" async></script>
+
+    {% unless site.google_analytics_id == "" %}
+      <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','{{ site.google_analytics_id }}','auto');ga('send','pageview')
+      </script>
+      <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    {% endunless %}
+  </body>
+</html>

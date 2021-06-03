@@ -1,0 +1,36 @@
+{
+  "name": "atea-cyhi",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "npm-run-all --parallel 'start:jekyll' 'start:webpack-dev-server'",
+    "start:jekyll": "bundle exec jekyll serve --config \"_config.yml,_config_dev.yml\"",
+    "start:webpack-dev-server": "webpack-dev-server",
+    "prebuild": "rm -rf javascripts stylesheets",
+    "build": "NODE_ENV=production webpack -p",
+    "postinstall": "mkdir -p .git/hooks && cp hooks/* .git/hooks/",
+    "build:staging": "bundle exec jekyll build --config \"_config.yml,_config_staging.yml\""
+  },
+  "author": "Alexis Fellenius Makrigianni",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "autoprefixer": "~6.7.6",
+    "css-loader": "~3.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "normalize.css": "^8.0.1",
+    "repetitivo": "git://github.com/Oktavilla/repetitivo.git#master",
+    "sass-loader": "~8.0.2",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "~4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

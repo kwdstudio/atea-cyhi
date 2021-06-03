@@ -1,0 +1,20 @@
+@import "../fonts";
+
+$font-inter: (
+  (
+    family: "Inter",
+    files: (
+      "/fonts/inter-regular.woff2",
+    ),
+    weight: $normal-font-weight,
+    style: normal,
+  ),
+  (
+    family: "Inter",
+    files: (
+      "/fonts/inter-black.woff2",
+    ),
+    weight: $bold-font-weight,
+    style: normal,
+  ),
+);

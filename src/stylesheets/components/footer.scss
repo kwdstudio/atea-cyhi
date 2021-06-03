@@ -1,0 +1,72 @@
+@import "../config/fonts";
+@import "../config/spacing";
+
+@import "../functions/color";
+
+@import "../helpers/typography";
+
+@import "repetitivo/helpers/respond-to";
+@import "repetitivo/helpers/styles-from-map";
+
+@import "repetitivo/patterns/list";
+
+//
+// Component: Footer
+// =============================================================================
+$component-name: "Footer";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  @include styles-from-map((
+    margin-top: $spacing-kilo-steep,
+    padding-bottom: $spacing-hecto-gentle,
+  ));
+  @include typography($inter, milli-gentle, tight);
+
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  // Element: Inner
+  // ---------------------------------------------------------------------------
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond-to(m) {
+      align-items: center;
+    }
+  }
+
+  // Element: Nav
+  // ---------------------------------------------------------------------------
+  &-nav {
+    @include list-reset;
+
+    @include respond-to(m) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  // Element: Nav Item
+  // ---------------------------------------------------------------------------
+  &-navItem {
+    margin-right: 2em;
+    margin-bottom: 0.5em;
+
+    @include respond-to(m) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  // Element: Nav Link
+  // ---------------------------------------------------------------------------
+  &-navLink {
+    text-decoration: none;
+  }
+}
