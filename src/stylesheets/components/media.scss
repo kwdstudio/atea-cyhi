@@ -16,8 +16,7 @@ $media-media-offset: (
 
 #{$component-base} {
   @include styles-from-map((
-    margin-top: $spacing-deca-steep,
-    margin-bottom: $spacing-deca-steep,
+    margin-top: $spacing-base-gentle,
   ));
 
   margin-left: 0;
@@ -27,13 +26,18 @@ $media-media-offset: (
     margin-top: 0;
   }
 
-  // Element: Media Wrapper
+  // Variant: Offset
   // ---------------------------------------------------------------------------
-  &-mediaWrapper {
-    @include styles-from-map((
-      margin-left: $media-media-offset,
-      margin-right: $media-media-offset,
-    ));
+  &--offset {
+
+    // Element: Media Wrapper
+    // ---------------------------------------------------------------------------
+    #{$component-base}-mediaWrapper {
+      @include styles-from-map((
+        margin-left: $media-media-offset,
+        margin-right: $media-media-offset,
+      ));
+    }
   }
 
   // Element: Media

@@ -1,0 +1,25 @@
+@import "../patterns/flex-embed";
+
+//
+// Component: Flex Embed
+// =============================================================================
+$component-name: "FlexEmbed";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  @include flex-embed-container;
+  padding-top: 56.25%;
+
+  // Element: Inner
+  // ---------------------------------------------------------------------------
+  &-inner {
+    @include flex-embed-item;
+  }
+
+  // Element: Item
+  // ---------------------------------------------------------------------------
+  &-item {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,7 +1,11 @@
 <figure class="Media">
-  <div class="Media-mediaWrapper">
-    <video src="{{ include.src }}" controls playsinline class="Media-media"></video>
+  <div class="Media-mediaWrapper FlexEmbed">
+    <div class="FlexEmbed-inner">
+      <iframe class="FlexEmbed-item" title="{{ include.title }}" width="560" height="315" src="{{ include.src }}?controls=0&modestbranding=1&rel=0" title="{{ include.caption }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
 
-  <figcaption class="Media-caption">{{ include.caption }}</figcaption>
+  {% if include.caption %}
+    <figcaption class="Media-caption">{{ include.caption }}</figcaption>
+  {% endif %}
 </figure>
