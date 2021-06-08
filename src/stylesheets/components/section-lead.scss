@@ -1,0 +1,28 @@
+@import "../config/fonts";
+@import "../config/spacing";
+
+@import "../helpers/typography";
+
+@import "repetitivo/helpers/styles-from-map";
+
+//
+// Component: Section Heading
+// =============================================================================
+$component-name: "SectionLead";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  @include typography($inter, base-gentle, normal);
+
+  // Variant: Centered
+  // ---------------------------------------------------------------------------
+  &--centered {
+    text-align: center;
+  }
+
+  // Variant: Inverted
+  // ---------------------------------------------------------------------------
+  &--inverted {
+    color: color(white);
+  }
+}

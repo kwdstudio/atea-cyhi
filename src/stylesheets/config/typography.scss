@@ -5,7 +5,7 @@
 @import "./typography-scales/scale-inter";
 
 $base-font: (
-  font-family: ("Inter", "Times New Roman", serif),
+  font-family: ("Inter", arial, serif),
   font-size: map-get($scale-inter, base-gentle),
   line-height: map-get($scale-inter-line-height, normal),
 );

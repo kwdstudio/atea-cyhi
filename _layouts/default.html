@@ -19,7 +19,7 @@
     <script>(function(k,w,d,s,t,u,d,i,o){k[w]=k[w].replace('no-js','has-js')}(document.documentElement,'className'))</script>
 
   </head>
-  <body>
+  <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
     {% include header.html %}
 
     {{ content }}

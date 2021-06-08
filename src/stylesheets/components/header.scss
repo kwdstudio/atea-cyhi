@@ -10,30 +10,25 @@ $component-name: "Header";
 $component-base: ".#{$component-name}";
 
 #{$component-base} {
-  background: #000;
-
-  @include styles-from-map((
-    margin-bottom: $spacing-deca-gentle,
-  ));
-
   // Element: Inner
   // ---------------------------------------------------------------------------
   &-inner {
-    @include respond-to(m) {
-      display: flex;
-      align-items: flex-end;
-    }
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   // Element: Logotype
   // ---------------------------------------------------------------------------
   &-logotype {
-    margin-bottom: 0.5em;
+  }
+}
 
-    @include respond-to(m) {
-      width: 50%;
-
-      margin-bottom: 0;
-    }
+.hasHero {
+  #{$component-base} {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 900;
   }
 }

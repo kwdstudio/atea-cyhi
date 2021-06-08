@@ -1,0 +1,43 @@
+@import "../config/fonts";
+@import "../config/spacing";
+
+@import "../helpers/typography";
+
+@import "repetitivo/helpers/styles-from-map";
+
+//
+// Component: Section Heading
+// =============================================================================
+$component-name: "Button";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  display: inline-block;
+  @include typography($inter, base-gentle, normal);
+  @include styles-from-map((
+    padding-top: $spacing-milli-gentle,
+    padding-right: $spacing-base-gentle,
+    padding-bottom: $spacing-milli-gentle,
+    padding-left: $spacing-base-gentle,
+  ));
+
+  border: 1px solid color(white);
+  border-radius: 5px;
+  text-decoration: none;
+
+  // Variant: Centered
+  // ---------------------------------------------------------------------------
+  &--centered {
+    text-align: center;
+  }
+
+  // Variant: Inverted
+  // ---------------------------------------------------------------------------
+  &--inverted {
+    color: color(white);
+
+    &:hover {
+      color: color(white);
+    }
+  }
+}

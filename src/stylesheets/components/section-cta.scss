@@ -1,0 +1,40 @@
+@import "../config/fonts";
+@import "../config/spacing";
+
+@import "../helpers/typography";
+
+@import "repetitivo/helpers/styles-from-map";
+
+//
+// Component: Section Heading
+// =============================================================================
+$component-name: "SectionCta";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  @include styles-from-map((
+    margin-top: $spacing-base-gentle,
+  ));
+
+  // Variant: Centered
+  // ---------------------------------------------------------------------------
+  &--centered {
+    text-align: center;
+  }
+
+  // Variant: Inverted
+  // ---------------------------------------------------------------------------
+  &--inverted {
+    .SectionCta-link {
+      color: color(white);
+    }
+  }
+
+  // Variant: Tight
+  // ---------------------------------------------------------------------------
+  &--tight {
+    @include styles-from-map((
+      margin-top: $spacing-centi-gentle,
+    ));
+  }
+}

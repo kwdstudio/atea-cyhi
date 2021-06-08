@@ -28,6 +28,7 @@ $component-base: ".#{$component-name}";
     @include repetitivo-generate-width-modifier(18 of 24, ml);
     @include repetitivo-generate-width-modifier(20 of 24, ml);
 
+    @include repetitivo-generate-width-modifier(12 of 24, l);
     @include repetitivo-generate-width-modifier(16 of 24, l);
     @include repetitivo-generate-width-modifier(18 of 24, l);
 

@@ -12,16 +12,50 @@ $component-name: "SectionHeading";
 $component-base: ".#{$component-name}";
 
 #{$component-base} {
-  @include typography($inter, kilo-gentle, tight);
+  @include typography($inter, mega-steep, tight);
   @include styles-from-map((
-    margin-bottom: $spacing-base-steep,
+    margin-bottom: $spacing-base-gentle,
   ));
 
-  font-weight: $normal-font-weight;
+  font-weight: $black-font-weight;
 
+  // Variant: Inverted
+  // ---------------------------------------------------------------------------
+  &--inverted {
+    color: color(white);
+  }
+
+  // Variant: Centered
+  // ---------------------------------------------------------------------------
+  &--centered {
+    text-align: center;
+  }
+
+  // Variant: Tight
+  // ---------------------------------------------------------------------------
   &--tight {
     @include styles-from-map((
       margin-bottom: $spacing-centi-gentle,
     ));
+  }
+
+  // Variant: Hecto
+  // ---------------------------------------------------------------------------
+  &--hecto {
+    @include typography($inter, hecto-steep, tight);
+  }
+
+  // Variant: Deca
+  // ---------------------------------------------------------------------------
+  &--deca {
+    @include typography($inter, deca-steep, tight);
+    @include styles-from-map((
+      margin-bottom: $spacing-centi-gentle,
+    ));
+  }
+
+  // Element: Toned Down
+  &-tonedDown {
+    font-weight: normal;
   }
 }

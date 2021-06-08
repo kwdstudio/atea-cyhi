@@ -17,4 +17,12 @@ $font-inter: (
     weight: $bold-font-weight,
     style: normal,
   ),
+  (
+    family: "Inter",
+    files: (
+      "/fonts/inter-black.woff2",
+    ),
+    weight: $black-font-weight,
+    style: normal,
+  ),
 );
