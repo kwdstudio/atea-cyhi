@@ -1,0 +1,49 @@
+@import "../config/fonts";
+@import "../config/spacing";
+
+@import "../helpers/typography";
+
+@import "repetitivo/helpers/styles-from-map";
+
+//
+// Component: Newsletter Signup
+// =============================================================================
+$component-name: "NewsletterSignup";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  // Variant: Footer
+  // ---------------------------------------------------------------------------
+  &--footer {
+    @include styles-from-map((
+      padding-top: $spacing-deca-steep,
+      padding-bottom: $spacing-deca-steep,
+    ));
+    background: rgb(245, 245, 246);
+
+    // Element: Text
+    // ---------------------------------------------------------------------------
+    #{$component-base}-text {
+
+      br {
+        display: none;
+
+        @include respond-to(ml) {
+          display: inline;
+        }
+      }
+    }
+
+    // Element: CTA
+    // ---------------------------------------------------------------------------
+    #{$component-base}-cta {
+      @include styles-from-map((
+        margin-top: $spacing-base-gentle,
+      ));
+      @include respond-to(m) {
+        text-align: right;
+        margin-top: 0;
+      }
+    }
+  }
+}
