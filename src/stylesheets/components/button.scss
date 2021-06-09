@@ -21,9 +21,10 @@ $component-base: ".#{$component-name}";
     padding-left: $spacing-base-gentle,
   ));
 
-  border: 1px solid color(white);
+  border: 1px solid #011E2A;
   border-radius: 5px;
   text-decoration: none;
+  color: #011E2A;
 
   // Variant: Centered
   // ---------------------------------------------------------------------------
@@ -34,6 +35,18 @@ $component-base: ".#{$component-name}";
   // Variant: Inverted
   // ---------------------------------------------------------------------------
   &--inverted {
+    color: color(white);
+    border: 1px solid color(white);
+
+    &:hover {
+      color: color(white);
+    }
+  }
+
+  // Variant: Inverted
+  // ---------------------------------------------------------------------------
+  &--solid {
+    background: #011E2A;
     color: color(white);
 
     &:hover {
