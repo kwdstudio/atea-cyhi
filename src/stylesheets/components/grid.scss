@@ -34,6 +34,12 @@ $component-base: ".#{$component-name}";
 
     @include repetitivo-generate-width-modifier(14 of 24, xl);
 
+    &--centerVertically {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
     &-s--push-1 {
       @include respond-to(s) {
         margin-left: grid-column-width(1, 24);
