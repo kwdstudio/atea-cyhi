@@ -10,6 +10,7 @@ dl,
 blockquote {
   margin-top: 0;
   margin-bottom: $base-text-margin-bottom;
+  padding: 0;
 
   &:last-child {
     margin-bottom: 0;
