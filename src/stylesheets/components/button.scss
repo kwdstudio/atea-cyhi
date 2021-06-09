@@ -48,6 +48,7 @@ $component-base: ".#{$component-name}";
   &--solid {
     background: #011E2A;
     color: color(white);
+    font-weight: $bold-font-weight;
 
     &:hover {
       color: color(white);
