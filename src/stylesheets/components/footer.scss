@@ -18,7 +18,7 @@ $component-base: ".#{$component-name}";
 
 #{$component-base} {
   @include styles-from-map((
-    margin-top: $spacing-hecto-steep,
+    padding-top: $spacing-hecto-steep,
     padding-bottom: $spacing-hecto-steep,
   ));
   @include typography($inter, milli-gentle, normal);
