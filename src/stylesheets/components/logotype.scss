@@ -12,17 +12,16 @@ $logotype-width-header: (
 );
 
 $logotype-width-footer: (
-  default: 90px,
-  m: 110px,
-  l: 150px,
-  xl: 180px,
+  default: 100px,
+  m: 115px,
+  l: 130px,
 );
 
 #{$component-base} {
   display: block;
-  height: 30px;
 
   &--header {
+    height: 30px;
     margin-right: auto;
     margin-left: auto;
 
@@ -32,6 +31,8 @@ $logotype-width-footer: (
   }
 
   &--footer {
+    margin-left: auto;
+    margin-right: auto;
     @include styles-from-map((
       width: $logotype-width-footer,
     ));
