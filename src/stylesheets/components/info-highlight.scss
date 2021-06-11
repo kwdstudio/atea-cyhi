@@ -1,0 +1,51 @@
+@import "../config/fonts";
+@import "../config/spacing";
+
+@import "../helpers/typography";
+
+@import "repetitivo/helpers/styles-from-map";
+
+//
+// Component: Info Highlight
+// =============================================================================
+$component-name: "InfoHighlight";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  @include styles-from-map((
+    margin-top: $spacing-base-gentle,
+  ));
+
+  // Element: Info
+  // ---------------------------------------------------------------------------
+  &-info {
+    @include typography($inter, mega-steep, tight);
+    font-weight: $black-font-weight;
+    letter-spacing: -.02em;
+  }
+
+  // Element: Description
+  // ---------------------------------------------------------------------------
+  &-description {
+    @include styles-from-map((
+      margin-top: $spacing-milli-gentle,
+    ));
+    @include typography($inter, centi-gentle, normal);
+  }
+
+  // Variant: Inverted
+  // ---------------------------------------------------------------------------
+  &--inverted {
+    .SectionCta-link {
+      color: color(white);
+    }
+  }
+
+  // Variant: Tight
+  // ---------------------------------------------------------------------------
+  &--tight {
+    @include styles-from-map((
+      margin-top: $spacing-centi-gentle,
+    ));
+  }
+}
