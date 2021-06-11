@@ -35,17 +35,25 @@ $component-base: ".#{$component-name}";
     @include list-reset;
     @include typography($inter, deci-gentle, normal);
     font-weight: bold;
-
     text-align: center;
+
+    @include respond-to(m) {
+      margin-bottom: -1em;
+    }
   }
 
   // Element: Nav Item
   // ---------------------------------------------------------------------------
   &-navItem {
-    margin-right: 2em;
+    margin-bottom: 1em;
 
-    &:last-child {
-      margin-right: 0;
+    @include respond-to(m) {
+      display: inline-block;
+      margin-right: 2em;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 

@@ -10,25 +10,162 @@ $component-name: "Header";
 $component-base: ".#{$component-name}";
 
 #{$component-base} {
-  // Element: Inner
-  // ---------------------------------------------------------------------------
-  &-inner {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  .main-navigation-is-open & {
+    background: #003D52;
+    min-height: 100vh;
   }
 
-  // Element: Logotype
-  // ---------------------------------------------------------------------------
-  &-logotype {
-  }
-}
-
-.hasHero {
-  #{$component-base} {
+  .hasHero & {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 900;
   }
+
+  // Element: Inner
+  // ---------------------------------------------------------------------------
+  &-inner {
+    @include styles-from-map((
+      padding: $spacing-deca-steep,
+      padding-top: $spacing-deca-gentle,
+    ));
+  }
+
+  // Element: Site Head
+  // ---------------------------------------------------------------------------
+  &-siteHead {
+    display: flex;
+    justify-content: space-between;
+
+    &:before {
+      content: "";
+      width: 30%;
+    }
+  }
+
+  // Element: Logotype
+  // ---------------------------------------------------------------------------
+  &-logotype {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  // Element: Menu Toggle
+  // ---------------------------------------------------------------------------
+  &-menuToggle {
+    background: transparent;
+    border: 0;
+    @include typography($inter, deci-steep, tight);
+    font-weight: $black-font-weight;
+    text-align: right;
+    width: 30%;
+    margin-right: -.8em;
+    @include styles-from-map((
+      padding: $spacing-centi-gentle,
+    ));
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .hasHero & {
+      color: color(white);
+    }
+
+    .main-navigation-is-open & {
+      color: color(white);
+    }
+  }
+
+  // Element: Menu Toggle Label
+  // ---------------------------------------------------------------------------
+  &-menuToggleLabel {
+
+    // Variant: Default
+    // ---------------------------------------------------------------------------
+    &--default {
+      .main-navigation-is-open & {
+        display: none;
+      }
+    }
+
+    // Variant: Open
+    // ---------------------------------------------------------------------------
+    &--open {
+      display: none;
+
+      .main-navigation-is-open & {
+        display: inline-block;
+      }
+    }
+  }
+
+  // Element: Menu Toggle Label Text
+  // ---------------------------------------------------------------------------
+  &-menuToggleLabelText {
+    @include respond-to(pre-s) {
+      display: none;
+    }
+  }
+
+  // Element: Menu Toggle Label
+  // ---------------------------------------------------------------------------
+  &-menuToggleIcon {
+    display: inline-block;
+    height: .7em;
+    width: 1.7em;
+    vertical-align: middle;
+    text-align: left;
+    fill: #003D52;
+    @include styles-from-map((
+      margin-top: $spacing-pico-gentle-neg,
+      margin-left: $spacing-nano-gentle,
+    ));
+
+    .main-navigation-is-open & {
+      fill: color(white);
+    }
+
+    .hasHero & {
+      fill: color(white);
+    }
+
+    * {
+      fill: inherit;
+    }
+  }
+
+  // Element: Expanded Content
+  // ---------------------------------------------------------------------------
+  &-expandedContent {
+    display: none;
+    text-align: right;
+
+    .main-navigation-is-open & {
+      display: block;
+    }
+  }
+
+  // Element: Section
+  // ---------------------------------------------------------------------------
+  &-section {
+    @include styles-from-map((
+      margin-top: $spacing-mega-gentle,
+    ));
+  }
+
+  // Element: Info
+  // ---------------------------------------------------------------------------
+  &-info {
+    margin-left: auto;
+    max-width: 280px;
+    @include typography($inter, milli-gentle, normal);
+    color: rgba(255,255,255,.6);
+  }
+}
+
+.main-navigation-is-open {
+  overflow-y: scroll;
 }

@@ -12,6 +12,25 @@ $component-name: "NewsletterSignup";
 $component-base: ".#{$component-name}";
 
 #{$component-base} {
+
+  // Variant: Header
+  // ---------------------------------------------------------------------------
+  &--header {
+    // Element: Text
+    // ---------------------------------------------------------------------------
+    #{$component-base}-text {
+      color: color(white);
+    }
+
+    // Element: CTA
+    // ---------------------------------------------------------------------------
+    #{$component-base}-cta {
+      @include styles-from-map((
+        margin-top: $spacing-base-gentle,
+      ));
+    }
+  }
+
   // Variant: Footer
   // ---------------------------------------------------------------------------
   &--footer {

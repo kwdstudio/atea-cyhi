@@ -1,0 +1,11 @@
+//
+// Component: Page
+// =============================================================================
+$component-name: "Page";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  .main-navigation-is-open & {
+    display: none;
+  }
+}

@@ -34,6 +34,7 @@ $spacing: (
 
 $spacing-giga-gentle:   map-get($spacing, spacing-giga-gentle);
 $spacing-mega-steep:   map-get($spacing, spacing-mega-steep);
+$spacing-mega-gentle:   map-get($spacing, spacing-mega-gentle);
 $spacing-kilo-steep:   map-get($spacing, spacing-kilo-steep);
 $spacing-kilo-gentle:  map-get($spacing, spacing-kilo-gentle);
 $spacing-hecto-steep:  map-get($spacing, spacing-hecto-steep);
@@ -56,6 +57,7 @@ $spacing-pico-steep:   map-get($spacing, spacing-pico-steep);
 $spacing-pico-gentle:  map-get($spacing, spacing-pico-gentle);
 
 $spacing-base-steep-neg:   inverse-map-values($spacing-base-steep);
+$spacing-centi-gentle-neg: inverse-map-values($spacing-centi-gentle);
 $spacing-milli-gentle-neg: inverse-map-values($spacing-milli-gentle);
 $spacing-micro-gentle-neg: inverse-map-values($spacing-micro-gentle);
 $spacing-pico-gentle-neg:  inverse-map-values($spacing-pico-gentle);

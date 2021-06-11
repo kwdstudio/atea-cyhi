@@ -54,4 +54,17 @@ $component-base: ".#{$component-name}";
       color: color(white);
     }
   }
+
+  // Variant: Solid Inverted
+  // ---------------------------------------------------------------------------
+  &--solidInverted {
+    color: #011E2A;
+    background: color(white);
+    border: 1px solid color(white);
+    font-weight: $bold-font-weight;
+
+    &:hover {
+      color: #011E2A;
+    }
+  }
 }

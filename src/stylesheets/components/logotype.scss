@@ -21,7 +21,6 @@ $logotype-width-footer: (
   display: block;
 
   &--header {
-    height: 30px;
     margin-right: auto;
     margin-left: auto;
 
@@ -36,5 +35,17 @@ $logotype-width-footer: (
     @include styles-from-map((
       width: $logotype-width-footer,
     ));
+  }
+
+  &--atea {
+    margin-left: auto;
+    fill: color(white);
+    @include styles-from-map((
+      width: $logotype-width-footer,
+    ));
+
+    * {
+      fill: color(white);
+    }
   }
 }

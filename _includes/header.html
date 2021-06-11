@@ -1,19 +1,49 @@
 {% assign current = page.url | replace: ".html", "" | downcase | split: "/" %}
 
 <header class="Header">
-  <div class="Wrapper Wrapper--bleed">
-    <div class="Header-inner">
+  <div class="Header-inner">
+    <div class="Header-siteHead">
       <div class="Header-logotype">
         <a href="/" class="Logotype Logotype--header">{% include logotype.svg %}</a>
       </div>
-
-      <!--
-      <nav class="MainNav">
+      <button class="Header-menuToggle" data-action="toggle#toggle">
+        <span class="Header-menuToggleLabel Header-menuToggleLabel--default">
+          <span class="Header-menuToggleLabelText">Meny</span>
+          {% include icon-menu.svg %}
+        </span>
+        <span class="Header-menuToggleLabel Header-menuToggleLabel--open" aria-hidden="true">
+          <span class="Header-menuToggleLabelText">Stäng</span>
+          {% include icon-close.svg %}
+        </span>
+      </button>
+    </div>
+    <div class="Header-expandedContent">
+      <nav class="MainNav Header-section">
         <ul class="MainNav-list">
-          <li class="MainNav-item"><a href="{% link _articles/videokonferens-sa-ser-du-bra-ut-pa-avstand.md %}" class="MainNav-link{% if current[1] == "videokonferens-sa-ser-du-bra-ut-pa-avstand" %} is-current{% endif %}">Videokonferens</a></li>
+          <li class="MainNav-item"><a href="/" class="MainNav-link">Konferenskameror</a></li>
+          <li class="MainNav-item"><a href="/" class="MainNav-link">Ergonomi</a></li>
+          <li class="MainNav-item"><a href="/" class="MainNav-link">Säkerhet</a></li>
+          <li class="MainNav-item"><a href="/" class="MainNav-link">Lenovo</a></li>
+          <li class="MainNav-item"><a href="/" class="MainNav-link">Logitech</a></li>
         </ul>
       </nav>
-      -->
+
+      <div class="NewsletterSignup NewsletterSignup--header Header-section">
+        <div class="NewsletterSignup-text">
+          Fantastiska produkter och praktiska tips.<br> <strong class="u-textBlack">I din inkorg, varje vecka.</strong>
+        </div>
+        <div class="NewsletterSignup-cta">
+          <a href="#" class="Button Button--solidInverted">Prenumerera nu</a>
+        </div>
+      </div>
+
+      <div class="Header-ateaLogotype Header-section">
+        <a href="https://www.atea.se/eshop/" class="Logotype Logotype--atea">{% include logotype-atea.svg %}</a>
+      </div>
+
+      <div class="Header-info">
+        {% include footer_info.html %}
+      </div>
     </div>
   </div>
 </header>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="sv">
+<html class="no-js" data-controller="toggle" data-toggle-controller-toggle-class="main-navigation-is-open" lang="sv">
   <head>
     <meta charset="utf-8">
 
@@ -22,11 +22,15 @@
   <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
     {% include header.html %}
 
-    {{ content }}
+    <div class="Page">
 
-    {% include newsletter_signup.html %}
+      {{ content }}
 
-    {% include footer.html %}
+      {% include newsletter_signup.html %}
+
+      {% include footer.html %}
+
+    </div>
 
     <script src="{{ site.assets_base_url }}/javascripts/application.js" async></script>
 
