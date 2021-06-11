@@ -1,12 +1,7 @@
-import * as controllers from './controllers'
+import { Application } from 'stimulus';
+import { definitionsFromContext } from 'stimulus/webpack-helpers';
+const application = Application.start();
 
-// Check if browser cuts the mustard
-if ('querySelector' in document && 'classList' in document.documentElement && 'Promise' in window) {
-  Object.keys(controllers).forEach(key => {
-    let controller = controllers[key]
+const context = require.context('./controllers', true, /\.js$/);
 
-    if (typeof controller.init === 'function') {
-      controller.init()
-    }
-  })
-}
+application.load(definitionsFromContext(context));

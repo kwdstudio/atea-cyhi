@@ -61,14 +61,6 @@ $media-media-offset: (
     display: block;
 
     width: 100%;
-
-    &:focus {
-      @include focus-link-and-button;
-    }
-
-    .is-pointer & {
-      outline: 0;
-    }
   }
 
   // Element: Caption

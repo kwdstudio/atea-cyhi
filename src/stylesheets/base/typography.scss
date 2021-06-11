@@ -26,10 +26,6 @@ a {
   text-decoration: underline;
   color: #5F5F5F;
 
-  &:focus {
-    @include focus-link-and-button;
-  }
-
   &:hover {
     text-decoration: none;
   }
