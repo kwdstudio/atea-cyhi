@@ -1,6 +1,6 @@
 # Jekyll (GitHub Pages) Configuration
 
-base_url: https://canyouhandleit.se
+base_url: https://cyhi.lexi.se
 assets_base_url: ""
 google_analytics_id: UA-XXXXXXXX-X
 permalink: /:path
