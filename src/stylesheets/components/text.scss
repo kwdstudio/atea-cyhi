@@ -10,16 +10,9 @@ $component-name: "Text";
 $component-base: ".#{$component-name}";
 
 #{$component-base} {
-  &--separated {
-    #{$component-base}-body {
-      @include styles-from-map((
-        padding-bottom: $spacing-deca-gentle,
-        margin-bottom: $spacing-deca-gentle,
-      ));
-
-      border-bottom: 1px solid color(neutral, 8);
-    }
-  }
+  @include styles-from-map((
+    margin-bottom: $spacing-mega-steep,
+  ));
 
   h2 {
     @include typography($inter, deca-gentle, tight);

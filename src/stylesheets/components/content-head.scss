@@ -19,16 +19,22 @@ $component-base: ".#{$component-name}";
     margin-top: $spacing-kilo-gentle,
     margin-bottom: $spacing-kilo-gentle,
   ));
+  text-align: center;
 
   // Element: Heading
   // ---------------------------------------------------------------------------
   &-heading {
-    @include typography($inter, hecto-gentle, tight);
+    @include typography($inter, mega-steep, tight);
+    font-weight: $black-font-weight;
   }
 
   // Element: Lead
   // ---------------------------------------------------------------------------
   &-lead {
-    @include typography($inter, hecto-gentle, tight);
+    @include styles-from-map((
+      margin-top: $spacing-base-gentle,
+    ));
+
+    @include typography($inter, base-gentle, normal);
   }
 }
