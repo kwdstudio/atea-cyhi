@@ -20,6 +20,16 @@ $logotype-width-footer: (
 #{$component-base} {
   display: block;
 
+  &-path {
+    .main-navigation-is-open & {
+      fill: color(white);
+    }
+
+    .hasHero & {
+      fill: color(white);
+    }
+  }
+
   &--header {
     margin-right: auto;
     margin-left: auto;

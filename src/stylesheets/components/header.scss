@@ -62,6 +62,7 @@ $component-base: ".#{$component-name}";
     text-align: right;
     width: 30%;
     margin-right: -.8em;
+    color: #003D52;
     @include styles-from-map((
       padding: $spacing-centi-gentle,
     ));
