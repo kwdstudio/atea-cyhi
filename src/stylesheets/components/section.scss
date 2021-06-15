@@ -80,6 +80,15 @@ $component-base: ".#{$component-name}";
 
   // Variant: Spacious
   // ---------------------------------------------------------------------------
+  &--bleed {
+    @include styles-from-map((
+      padding-top: 0,
+      padding-bottom: 0,
+    ));
+  }
+
+  // Variant: Spacious
+  // ---------------------------------------------------------------------------
   &--semiSpacious {
     @include styles-from-map((
       padding-top: $spacing-mega-gentle,
