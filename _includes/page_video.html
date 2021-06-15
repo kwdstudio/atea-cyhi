@@ -1,8 +1,6 @@
-<figure class="Media">
-  <div class="Media-mediaWrapper FlexEmbed Media-mediaWrapper--bordered">
-    <div class="FlexEmbed-inner">
-      <iframe class="FlexEmbed-item" title="{{ include.title }}" width="560" height="315" src="{{ include.src }}?controls=0&modestbranding=1&rel=0" title="{{ include.caption }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+<figure class="Media{% if include.caption %} {{ include.variant }}{% endif %}">
+  <div class="Media-mediaWrapper">
+    <video src="{{ include.src }}" controls playsinline class="Media-media"{% if include.autoplay %} autoplay{% endif %} loop></video>
   </div>
 
   {% if include.caption %}
