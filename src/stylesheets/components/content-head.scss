@@ -36,4 +36,10 @@ $component-base: ".#{$component-name}";
 
     @include typography($inter, base-gentle, normal);
   }
+
+  // Variant: Inverted
+  // ---------------------------------------------------------------------------
+  &--inverted {
+    color: color(white);
+  }
 }

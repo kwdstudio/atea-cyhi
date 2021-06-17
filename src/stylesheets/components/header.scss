@@ -10,6 +10,10 @@ $component-name: "Header";
 $component-base: ".#{$component-name}";
 
 #{$component-base} {
+  &--inverted {
+    background: #003D52;
+  }
+
   .main-navigation-is-open & {
     background: #003D52;
     min-height: 100vh;
@@ -71,10 +75,8 @@ $component-base: ".#{$component-name}";
       cursor: pointer;
     }
 
-    .hasHero & {
-      color: color(white);
-    }
-
+    #{$component-base}--inverted &,
+    .hasHero &,
     .main-navigation-is-open & {
       color: color(white);
     }
@@ -125,11 +127,9 @@ $component-base: ".#{$component-name}";
       margin-left: $spacing-nano-gentle,
     ));
 
+    #{$component-base}--inverted &,
+    .hasHero &,
     .main-navigation-is-open & {
-      fill: color(white);
-    }
-
-    .hasHero & {
       fill: color(white);
     }
 

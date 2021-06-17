@@ -22,9 +22,11 @@
   <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
     {% include header.html %}
 
-    <div class="Page">
+    <div class="Page{% if page.theme_inverted %} Page--inverted{% endif %}">
 
-      {{ content }}
+      <div class="Page-content">
+        {{ content }}
+      </div>
 
       {% include newsletter_signup.html %}
 

@@ -1,6 +1,6 @@
 {% assign current = page.url | replace: ".html", "" | downcase | split: "/" %}
 
-<header class="Header">
+<header class="Header{% if page.theme_inverted %} Header--inverted{% endif %}">
   <div class="Header-inner">
     <div class="Header-siteHead">
       <div class="Header-logotype">

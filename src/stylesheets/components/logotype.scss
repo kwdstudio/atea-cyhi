@@ -21,11 +21,9 @@ $logotype-width-footer: (
   display: block;
 
   &-path {
+    .Header--inverted &,
+    .hasHero &,
     .main-navigation-is-open & {
-      fill: color(white);
-    }
-
-    .hasHero & {
       fill: color(white);
     }
   }

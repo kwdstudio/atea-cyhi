@@ -8,4 +8,13 @@ $component-base: ".#{$component-name}";
   .main-navigation-is-open & {
     display: none;
   }
+
+  &--inverted {
+    #{$component-base}-content {
+      background: #003D52;
+      @include styles-from-map((
+        padding-bottom: $spacing-giga-gentle,
+      ));
+    }
+  }
 }
