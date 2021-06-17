@@ -8,6 +8,18 @@ $component-base: ".#{$component-name}";
 
 #{$component-base} {
 
+  &--paddedVertical {
+    @include styles-from-map((
+      margin-bottom: $spacing-base-steep-neg,
+    ), $breakpoints: $breakpoints);
+
+    #{$component-base}-item {
+      @include styles-from-map((
+        margin-bottom: $spacing-base-steep,
+      ), $breakpoints: $breakpoints);
+    }
+  }
+
   &--verticalCenter {
     @include grid-container--center-vertical;
   }
@@ -40,6 +52,7 @@ $component-base: ".#{$component-name}";
 
     @include repetitivo-generate-width-modifier(14 of 24, xl);
 
+    // TODO remove?
     &-s--push-1 {
       @include respond-to(s) {
         margin-left: grid-column-width(1, 24);

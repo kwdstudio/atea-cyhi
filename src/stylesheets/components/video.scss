@@ -1,0 +1,54 @@
+@import "../helpers/typography";
+@import "../config/spacing";
+@import "repetitivo/helpers/styles-from-map";
+
+//
+// Component: Video
+// =============================================================================
+$component-name: "Video";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  // Element: Media
+  // ---------------------------------------------------------------------------
+  &-media {
+
+  }
+
+  // Element: Heading
+  // ---------------------------------------------------------------------------
+  &-heading {
+    #{$component-base}--inverted & {
+      color: color(white);
+    }
+  }
+
+  // Element: Heading Link
+  // ---------------------------------------------------------------------------
+  &-headingLink {
+    #{$component-base}--inverted & {
+      color: color(white);
+    }
+  }
+
+  // Element: Description
+  // ---------------------------------------------------------------------------
+  &-description {
+    #{$component-base}--inverted & {
+      color: color(white);
+    }
+  }
+
+  // Variant: Inverted
+  // ---------------------------------------------------------------------------
+  &--inverted {
+  }
+
+  // Variant: Large
+  // ---------------------------------------------------------------------------
+  &--large {
+    @include styles-from-map((
+      margin-bottom: $spacing-kilo-gentle,
+    ));
+  }
+}

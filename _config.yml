@@ -6,6 +6,9 @@ google_analytics_id: UA-XXXXXXXX-X
 prevent_crawling: true
 permalink: /:path
 collections:
+  videos:
+    output: true
+    permalink: /hthi/:path
   articles:
     output: true
     permalink: /artiklar/:path

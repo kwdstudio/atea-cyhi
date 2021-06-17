@@ -1,0 +1,16 @@
+<div class="Grid Grid--paddedVertical Grid--padded Grid--verticalCenter Grid--compensatePadded Video Video--inverted">
+  {% for video in site.videos %}
+    <div class="Grid-item Grid-item-m--12-of-24 Video-media">
+      {%
+        include page_video_youtube.html
+        src=video.src
+        title=video.title
+        variant="Media--bordered"
+      %}
+    </div>
+    <div class="Grid-item Grid-item-m--12-of-24">
+      <h2 class="Video-heading"><a class="Video-headingLink" href="{{ video.url }}">{{ video.title }}</a></h2>
+      <div class="Video-description">{{ video.content | markdownify }}</div>
+    </div>
+  {% endfor %}
+</div>

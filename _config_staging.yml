@@ -7,3 +7,6 @@ collections:
   articles:
     output: true
     permalink: /artiklar/:path:output_ext
+  videos:
+    output: true
+    permalink: /hthi/:path:output_ext
