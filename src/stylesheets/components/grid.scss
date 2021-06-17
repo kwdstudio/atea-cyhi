@@ -7,6 +7,11 @@ $component-name: "Grid";
 $component-base: ".#{$component-name}";
 
 #{$component-base} {
+
+  &--verticalCenter {
+    @include grid-container--center-vertical;
+  }
+
   // Element: Item
   // ---------------------------------------------------------------------------
   &-item {
@@ -34,12 +39,6 @@ $component-base: ".#{$component-name}";
     @include repetitivo-generate-width-modifier(18 of 24, l);
 
     @include repetitivo-generate-width-modifier(14 of 24, xl);
-
-    &--centerVertically {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
 
     &-s--push-1 {
       @include respond-to(s) {
