@@ -1,6 +1,6 @@
 <figure class="Media{% if include.caption %} {{ include.variant }}{% endif %}">
   <div class="Media-mediaWrapper">
-    <video src="{{ include.src }}" controls playsinline class="Media-media"{% if include.autoplay %} autoplay{% endif %} loop></video>
+    <video src="{{ include.src }}" controls playsinline class="Media-media"{% if include.autoplay %} autoplay muted{% endif %} loop></video>
   </div>
 
   {% if include.caption %}
