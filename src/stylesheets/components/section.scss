@@ -13,8 +13,8 @@ $component-base: ".#{$component-name}";
 #{$component-base} {
   position: relative;
   @include styles-from-map((
-    padding-top: $spacing-hecto-steep,
-    padding-bottom: $spacing-hecto-steep,
+    padding-top: $spacing-kilo-gentle,
+    padding-bottom: $spacing-kilo-gentle,
   ));
 
   // Element: Image Wrapper
@@ -100,8 +100,8 @@ $component-base: ".#{$component-name}";
   // ---------------------------------------------------------------------------
   &--spacious {
     @include styles-from-map((
-      padding-top: $spacing-giga-gentle,
-      padding-bottom: $spacing-giga-gentle,
+      padding-top: $spacing-giga-steep,
+      padding-bottom: $spacing-giga-steep,
     ));
   }
 

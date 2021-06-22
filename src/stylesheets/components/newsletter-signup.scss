@@ -35,8 +35,8 @@ $component-base: ".#{$component-name}";
   // ---------------------------------------------------------------------------
   &--footer {
     @include styles-from-map((
-      padding-top: $spacing-deca-steep,
-      padding-bottom: $spacing-deca-steep,
+      padding-top: $spacing-hecto-steep,
+      padding-bottom: $spacing-hecto-steep,
     ));
     background: rgb(245, 245, 246);
 

@@ -1,20 +1,20 @@
 @import "../functions/inverse-map-values";
 
 $spacing: (
-  spacing-pico-gentle:  scale-map(2px, 1.0350),
-  spacing-nano-gentle:  scale-map(3px, 1.0350),
-  spacing-micro-gentle: scale-map(4px, 1.0350),
-  spacing-milli-gentle: scale-map(6px, 1.0350),
-  spacing-centi-gentle: scale-map(8px, 1.0350),
-  spacing-deci-gentle:  scale-map(11px, 1.0350),
-  spacing-base-gentle:  scale-map(16px, 1.0350),
-  spacing-deca-gentle:  scale-map(23px, 1.0350),
-  spacing-hecto-gentle: scale-map(32px, 1.0350),
-  spacing-kilo-gentle:  scale-map(45px, 1.0350),
-  spacing-mega-gentle:  scale-map(64px, 1.0350),
-  spacing-giga-gentle:  scale-map(90px, 1.0350),
-  spacing-tera-gentle:  scale-map(128px, 1.0350),
-  spacing-peta-gentle:  scale-map(181px, 1.0350),
+  spacing-pico-gentle:  scale-map(2px, 1.05),
+  spacing-nano-gentle:  scale-map(3px, 1.05),
+  spacing-micro-gentle: scale-map(4px, 1.05),
+  spacing-milli-gentle: scale-map(6px, 1.05),
+  spacing-centi-gentle: scale-map(8px, 1.05),
+  spacing-deci-gentle:  scale-map(11px, 1.05),
+  spacing-base-gentle:  scale-map(16px, 1.05),
+  spacing-deca-gentle:  scale-map(23px, 1.05),
+  spacing-hecto-gentle: scale-map(32px, 1.05),
+  spacing-kilo-gentle:  scale-map(45px, 1.05),
+  spacing-mega-gentle:  scale-map(64px, 1.05),
+  spacing-giga-gentle:  scale-map(90px, 1.05),
+  spacing-tera-gentle:  scale-map(128px, 1.05),
+  spacing-peta-gentle:  scale-map(181px, 1.05),
 
   spacing-pico-steep:  scale-map(2px, 1.0916),
   spacing-nano-steep:  scale-map(3px, 1.0916),
@@ -32,9 +32,10 @@ $spacing: (
   spacing-peta-steep:  scale-map(181px, 1.0916),
 );
 
-$spacing-giga-gentle:   map-get($spacing, spacing-giga-gentle);
+$spacing-giga-steep:   map-get($spacing, spacing-giga-steep);
+$spacing-giga-gentle:  map-get($spacing, spacing-giga-gentle);
 $spacing-mega-steep:   map-get($spacing, spacing-mega-steep);
-$spacing-mega-gentle:   map-get($spacing, spacing-mega-gentle);
+$spacing-mega-gentle:  map-get($spacing, spacing-mega-gentle);
 $spacing-kilo-steep:   map-get($spacing, spacing-kilo-steep);
 $spacing-kilo-gentle:  map-get($spacing, spacing-kilo-gentle);
 $spacing-hecto-steep:  map-get($spacing, spacing-hecto-steep);
