@@ -15,9 +15,9 @@ $component-base: ".#{$component-name}";
   display: inline-block;
   @include typography($inter, deci-gentle, normal);
   @include styles-from-map((
-    padding-top: $spacing-centi-gentle,
+    padding-top: $spacing-deci-gentle,
     padding-right: $spacing-base-gentle,
-    padding-bottom: $spacing-centi-gentle,
+    padding-bottom: $spacing-deci-gentle,
     padding-left: $spacing-base-gentle,
   ));
 
@@ -25,6 +25,13 @@ $component-base: ".#{$component-name}";
   border-radius: 5px;
   text-decoration: none;
   color: #011E2A;
+
+  @include respond-to(m) {
+    @include styles-from-map((
+      padding-top: $spacing-centi-gentle,
+      padding-bottom: $spacing-centi-gentle,
+    ));
+  }
 
   // Variant: Centered
   // ---------------------------------------------------------------------------
