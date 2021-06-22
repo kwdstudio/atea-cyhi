@@ -10,7 +10,7 @@ Så hur väljer man?
 
 ## För ensamseglaren
 
-Då många av oss kommer fortsätta jobba hemifrån åtminstone delvis är det hög tid att uppgradera hemmakontorets maskinpark, om det inte redan är gjort. Vi förväntas se proffsiga ut varifrån vi än jobbar, och dålig bildkvalitet kan inte längre skyllas på datorns inbyggda kamera. Idag finns gott om prisvärda webbkameror av hög kvalitet för små utrymmen.(brio) Komplettera gärna med ett bra headset så att ljudet blir lika skarpt som bilden.
+Då många av oss kommer fortsätta jobba hemifrån åtminstone delvis är det hög tid att uppgradera hemmakontorets maskinpark, om det inte redan är gjort. Vi förväntas se proffsiga ut varifrån vi än jobbar, och dålig bildkvalitet kan inte längre skyllas på datorns inbyggda kamera. Idag finns gott om prisvärda webbkameror av hög kvalitet för små utrymmen. Komplettera gärna med ett bra headset så att ljudet blir lika skarpt som bilden.
 
 ## Mellanstora rum — släng ut högtalartelefonen!
 

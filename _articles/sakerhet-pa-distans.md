@@ -2,6 +2,7 @@
 layout: article
 title: "Säkerhet på distans"
 intro_heading: "Säkerhet på distans"
+intro_lead: "Distansarbete kan innebära så stora säkerhetsbrister att det sätter hela företaget på spel. Men det går att distansjobba säkert!"
 ---
 99 procent av oss vill jobba någon annanstans än på kontoret. Åtminstone en del av arbetstiden, enligt analysfirman Buffer. Just nu behöver vi inte ens be om lov; att hålla sig borta från kontoret är på många arbetsplatser ett krav. Och det finns goda skäl att tro att distansarbetandet kommer fortsätta även i en post-pandemisk framtid, när såväl chefer som anställda fått upp ögonen för hur bra det kan fungera. Samtidigt innebär en hastig omställning till nya rutiner ofta problem och barnsjukdomar.  En stor utmaning är säkerhet. Distansarbete kan i värsta fall innebära så stora säkerhetsbrister att det sätter hela företaget på spel. Men det går att distansjobba säkert! Vi reder ut några delar som hjälper dig på traven.
 
