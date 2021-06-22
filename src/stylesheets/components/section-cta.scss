@@ -41,6 +41,6 @@ $component-base: ".#{$component-name}";
   // Variant: Base
   // ---------------------------------------------------------------------------
   &--base {
-    @include typography($inter, base-gentle, normal);
+    @include typography($inter, base-gentle, loose);
   }
 }
