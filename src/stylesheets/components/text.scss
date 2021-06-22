@@ -39,4 +39,14 @@ $component-base: ".#{$component-name}";
     font: inherit;
     text-decoration: underline;
   }
+
+  li {
+    @include styles-from-map((
+      margin-bottom: $spacing-milli-gentle,
+    ));
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
