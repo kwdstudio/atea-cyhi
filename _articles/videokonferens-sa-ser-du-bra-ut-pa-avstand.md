@@ -4,6 +4,11 @@ title: "Videokonferens: Så ser du bra ut på avstånd"
 intro_heading: "Videokonferens: Så ser du bra ut på avstånd"
 intro_lead: "<p>Du har hört det förut: Hur 2020-2021 blev videokonferensens år, hur vi alla kastades in i en ocean av videomöten där osmickrande grodperspektiv och ofrivilliga glimtar av pyjamasbyxor varvades med dåligt ljud, oskarp bild och “hallå? Hörs jag? Börje, du är mute:ad!”. </p>"
 ---
+{%
+  include page_image.html
+  src="/images/articles/videoconference-brio-cup.jpg"
+%}
+
 Egentligen begär vi bara en sak av vår utrustning för videokonferens: Att slippa tänka på den. Bra utrustning bara funkar, pålitligt och okomplicerat. Vilket väl är vad alla tillverkare påstår om just sina produkter.
 
 Så hur väljer man?
@@ -15,6 +20,11 @@ Då många av oss kommer fortsätta jobba hemifrån åtminstone delvis är det h
 ## Mellanstora rum — släng ut högtalartelefonen!
 
 Är ni två eller flera personer i mötet behövs annan, mer avancerad utrustning. För att slippa hålla reda på både ljud och bild (det är ju det vi är ute efter — slippa tänka på utrustningen), välj en produkt som tar hand om både och. Satsa på en modell som monteras som en limpa ovanpå skärmen och tar upp ljud med strålformade mikrofoner, som fångar upp alla deltagare. Så kan du pensionera högtalartelefonen, slippa trassliga sladdar och få mer utrymme på bordet. Vill man dessutom både låta och se bra ut så finns hjälp att få: Logitechs RightSense-teknologi optimerar röster, zoom och klarhet, så att alla i mötet låter och ser så bra ut som möjligt.
+
+{%
+  include page_image.html
+  src="/images/articles/videoconference-meetup.jpg"
+%}
 
 ## Stora rum och många deltagare
 

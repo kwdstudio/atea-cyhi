@@ -4,6 +4,11 @@ title: "Säkerhet på distans"
 intro_heading: "Säkerhet på distans"
 intro_lead: "Distansarbete kan innebära så stora säkerhetsbrister att det sätter hela företaget på spel. Men det går att distansjobba säkert!"
 ---
+{%
+  include page_image.html
+  src="/images/articles/security-1.jpg"
+%}
+
 99 procent av oss vill jobba någon annanstans än på kontoret. Åtminstone en del av arbetstiden, enligt analysfirman Buffer. Just nu behöver vi inte ens be om lov; att hålla sig borta från kontoret är på många arbetsplatser ett krav. Och det finns goda skäl att tro att distansarbetandet kommer fortsätta även i en post-pandemisk framtid, när såväl chefer som anställda fått upp ögonen för hur bra det kan fungera. Samtidigt innebär en hastig omställning till nya rutiner ofta problem och barnsjukdomar.  En stor utmaning är säkerhet. Distansarbete kan i värsta fall innebära så stora säkerhetsbrister att det sätter hela företaget på spel. Men det går att distansjobba säkert! Vi reder ut några delar som hjälper dig på traven.
 
 ## Rutiner och produkter som skyddar
@@ -13,6 +18,11 @@ Det finns flera grundläggande säkerhetsrutiner som är viktiga att följa. Du 
 För just back up finns gott om smidiga mobila diskar med kryptering och egen programvara för säkerhet, ifall den skulle komma på villovägar. En fördel med dessa är att du kommer åt dina filer offline. Ett alternativ till extern hårddisk är om arbetsgivaren tillhandahåller lagring och säkerhetskopiering i molnet. Då vet du att du använder samma säkerhetsstandard som din arbetsgivare och behöver inte tänka på diskens kryptering och skydd. Däremot behöver du vara online för att komma åt filerna. 
 
 [-> Köp diskar för säkerhetskopiering här](https://www.atea.se/eshop/products/?filters=S_KrypteradHDD)
+
+{%
+  include page_image.html
+  src="/images/articles/security-2.jpg"
+%}
 
 En förbisedd säkerhetsrisk som nästan alla café-jobbare utsätter sig för är visuella intrång — att någon smygkikar eller filmar din skärm utan att du märker något, i syfte att komma över information. Det finns många sätt att bli hackad, och långt ifrån alla sker genom spyware, phishing eller andra online-baserade säkerhetsluckor. Tvärtom, metoder som social engineering, övervakning, inbrott och annat som sker i den fysiska världen för att komma över information är ofta en del av större spionage eller hack. Som tur är finns det enkla och effektiva sekretesskydd för både mobilskärmar och laptops.
 

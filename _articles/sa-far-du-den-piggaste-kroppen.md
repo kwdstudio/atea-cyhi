@@ -4,6 +4,11 @@ title: "Så får du den piggaste kontorskroppen"
 intro_heading: "Så får du den piggaste kontorskroppen"
 intro_lead: "<p>Hjärnan jobbar bäst i en pigg och välmående kropp. Vi kan inte vara produktiva eller effektiva när vi har ont; det är det enkla skälet till att ergonomi borde toppa varje arbetsgivares priolista. Så här får du den friskaste kontorskroppen.</p>"
 ---
+{%
+  include page_image.html
+  src="/images/articles/ergonomic.jpg"
+%}
+
 Hjärnan jobbar bäst i en pigg och välmående kropp. Vi kan inte vara produktiva eller effektiva när vi har ont; det är det enkla skälet till att ergonomi borde toppa varje arbetsgivares priolista. Så här får du den friskaste kontorskroppen.
 
 Kontor eller jobba hemma - oavsett vilket så sitter du förmodligen många timmar framför datorn, och sitter du bara lite fel kan det orsaka en hel del problem och smärta.
