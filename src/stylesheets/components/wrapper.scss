@@ -21,4 +21,10 @@ $component-base: ".#{$component-name}";
     padding-left: 0;
     padding-right: 0;
   }
+
+  &--spaciousBottom {
+    @include styles-from-map((
+      margin-bottom: $spacing-mega-steep,
+    ));
+  }
 }
