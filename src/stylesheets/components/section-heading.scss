@@ -19,6 +19,14 @@ $component-base: ".#{$component-name}";
 
   font-weight: $black-font-weight;
 
+  br {
+    display: none;
+
+    @include respond-to(ml) {
+      display: inline;
+    }
+  }
+
   // Variant: Inverted
   // ---------------------------------------------------------------------------
   &--inverted {
@@ -31,24 +39,19 @@ $component-base: ".#{$component-name}";
     text-align: center;
   }
 
-  // Variant: Tight
+  // Variant: Hecto
   // ---------------------------------------------------------------------------
-  &--tight {
+  &--hecto {
+    @include typography($inter, hecto-steep, normal);
     @include styles-from-map((
       margin-bottom: $spacing-centi-gentle,
     ));
   }
 
-  // Variant: Hecto
-  // ---------------------------------------------------------------------------
-  &--hecto {
-    @include typography($inter, hecto-steep, tight);
-  }
-
   // Variant: Deca
   // ---------------------------------------------------------------------------
   &--deca {
-    @include typography($inter, deca-steep, tight);
+    @include typography($inter, deca-steep, normal);
     @include styles-from-map((
       margin-bottom: $spacing-centi-gentle,
     ));

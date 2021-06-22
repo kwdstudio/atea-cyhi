@@ -162,7 +162,7 @@ $component-base: ".#{$component-name}";
   &-info {
     margin-left: auto;
     max-width: 280px;
-    @include typography($inter, milli-gentle, normal);
+    @include typography($inter, milli-gentle, loose);
     color: rgba(255,255,255,.6);
   }
 }

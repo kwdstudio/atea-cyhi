@@ -30,7 +30,7 @@ $component-base: ".#{$component-name}";
     @include styles-from-map((
       margin-top: $spacing-milli-gentle,
     ));
-    @include typography($inter, centi-gentle, normal);
+    @include typography($inter, centi-gentle, loose);
   }
 
   // Variant: Inverted

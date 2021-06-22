@@ -12,6 +12,11 @@ $component-name: "NewsletterSignup";
 $component-base: ".#{$component-name}";
 
 #{$component-base} {
+  // Element: Text
+  // ---------------------------------------------------------------------------
+  &-text {
+    @include typography($inter, base-gentle, loose);
+  }
 
   // Variant: Header
   // ---------------------------------------------------------------------------

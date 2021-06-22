@@ -34,7 +34,7 @@ $component-base: ".#{$component-name}";
       margin-top: $spacing-base-gentle,
     ));
 
-    @include typography($inter, base-gentle, normal);
+    @include typography($inter, base-gentle, loose);
   }
 
   // Variant: Inverted

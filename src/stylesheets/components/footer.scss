@@ -21,7 +21,7 @@ $component-base: ".#{$component-name}";
     padding-top: $spacing-kilo-gentle,
     padding-bottom: $spacing-kilo-gentle,
   ));
-  @include typography($inter, milli-gentle, normal);
+  @include typography($inter, milli-gentle, loose);
   color: #5F5F5F;
 
   // Element: Inner

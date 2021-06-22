@@ -37,4 +37,10 @@ $component-base: ".#{$component-name}";
       margin-top: $spacing-centi-gentle,
     ));
   }
+
+  // Variant: Base
+  // ---------------------------------------------------------------------------
+  &--base {
+    @include typography($inter, base-gentle, normal);
+  }
 }

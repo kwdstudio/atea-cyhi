@@ -13,11 +13,11 @@ $component-base: ".#{$component-name}";
 
 #{$component-base} {
   display: inline-block;
-  @include typography($inter, base-gentle, normal);
+  @include typography($inter, deci-gentle, normal);
   @include styles-from-map((
-    padding-top: $spacing-milli-gentle,
+    padding-top: $spacing-centi-gentle,
     padding-right: $spacing-base-gentle,
-    padding-bottom: $spacing-milli-gentle,
+    padding-bottom: $spacing-centi-gentle,
     padding-left: $spacing-base-gentle,
   ));
 
