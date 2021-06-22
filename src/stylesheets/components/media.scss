@@ -8,23 +8,26 @@ $component-base: ".#{$component-name}";
 
 $media-media-offset: (
   default: -7.1%,
-  m: -10%,
-  l: -20%,
+  s: calc(-5% + -13px),
+  m: calc(-18.3% + -13px),
+  ml: calc(-21.9% + -16px),
+  l: calc(-26.3% + -16px),
 );
 
 #{$component-base} {
   margin: 0;
 
-  &:first-child {
-    margin-top: 0;
-  }
-
   // Variant: In content
   // ---------------------------------------------------------------------------
   &--inContent {
     @include styles-from-map((
-      margin-top: $spacing-base-gentle,
+      margin-top: $spacing-hecto-gentle,
+      margin-bottom: $spacing-hecto-gentle,
     ));
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   // Variant: Offset
@@ -64,5 +67,8 @@ $media-media-offset: (
   // ---------------------------------------------------------------------------
   &-caption {
     @include typography($inter, centi-gentle, tight);
+    @include styles-from-map((
+      margin-top: $spacing-centi-gentle,
+    ));
   }
 }
