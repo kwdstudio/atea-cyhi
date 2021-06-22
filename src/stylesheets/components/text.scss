@@ -11,14 +11,12 @@ $component-base: ".#{$component-name}";
 
 #{$component-base} {
   h2 {
-    @include typography($inter, deca-gentle, tight);
     @include styles-from-map((
       margin-top: $spacing-deca-gentle,
       margin-bottom: $spacing-milli-gentle,
     ));
-
-    font: inherit;
-    font-weight: $bold-font-weight;
+    @include typography($inter, hecto-gentle, normal);
+    font-weight: $black-font-weight;
 
     &:first-child {
       margin-top: 0;
@@ -26,18 +24,22 @@ $component-base: ".#{$component-name}";
   }
 
   h3 {
-    @include typography($inter, base-gentle, tight);
-
-    text-decoration: underline;
+    @include styles-from-map((
+      margin-top: $spacing-deca-gentle,
+      margin-bottom: $spacing-micro-gentle,
+    ));
+    @include typography($inter, deca-gentle, normal);
+    font-weight: $black-font-weight;
   }
 
   h4,
   h5,
   h6 {
-    margin: 0;
-
-    font: inherit;
-    text-decoration: underline;
+    @include typography($inter, base-gentle, normal);
+    @include styles-from-map((
+      margin-top: $spacing-deca-gentle,
+      margin-bottom: $spacing-micro-gentle,
+    ));
   }
 
   li {
