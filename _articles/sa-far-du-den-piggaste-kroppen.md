@@ -2,6 +2,7 @@
 layout: article
 title: "Så får du den piggaste kontorskroppen"
 description: "Hjärnan jobbar bäst i en pigg och välmående kropp. Vi kan inte vara produktiva eller effektiva när vi har ont. Så här får du den friskaste kontorskroppen."
+image: "/images/articles/ergonomic.jpg"
 intro_heading: "Så får du den piggaste kontorskroppen"
 intro_lead: "<p>Hjärnan jobbar bäst i en pigg och välmående kropp. Vi kan inte vara produktiva eller effektiva när vi har ont; det är det enkla skälet till att ergonomi borde toppa varje arbetsgivares priolista. Så här får du den friskaste kontorskroppen.</p>"
 ---

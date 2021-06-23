@@ -2,6 +2,7 @@
 layout: article
 title: "IT-säkerhet på distans"
 description: "När många av oss fortsätter jobba hemifrån är säkerhet en stor utmaning. Slarv kan innebära så stora säkerhetsbrister att det sätter hela företaget på spel."
+image: "/images/articles/security-1.jpg"
 intro_heading: "Säkerhet på distans"
 intro_lead: "Distansarbete kan innebära så stora säkerhetsbrister att det sätter hela företaget på spel. Men det går att distansjobba säkert!"
 ---
