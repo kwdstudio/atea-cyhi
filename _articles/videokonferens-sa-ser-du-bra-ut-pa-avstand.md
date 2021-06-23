@@ -1,9 +1,9 @@
 ---
 layout: article
 title: "Så väljer du rätt konferenskamera till videomötet"
+description: "Konferenskamera och utrustning för videomöte behöver bara göra en enda sak: Fungera, stabilt, pålitligt och enkelt. Så här väljer du rätt."
 intro_heading: "Videokonferens: Så ser du bra ut på avstånd"
 intro_lead: "<p>Du har hört det förut: Hur 2020-2021 blev videokonferensens år, hur vi alla kastades in i en ocean av videomöten där osmickrande grodperspektiv och ofrivilliga glimtar av pyjamasbyxor varvades med dåligt ljud, oskarp bild och “hallå? Hörs jag? Börje, du är mute:ad!”. </p>"
-description: "Konferenskamera och utrustning för videomöte behöver bara göra en enda sak: Fungera, stabilt, pålitligt och enkelt. Så här väljer du rätt."
 ---
 {%
   include page_image.html
