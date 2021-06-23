@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>{% if page.title %}{{ page.title }} | {% endif %}Can you handle it?</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Can you handle it? – Atea eShop</title>
 
     {% if page.title %}
       <meta property="og:title" content="{{ page.title }}">
@@ -16,6 +16,8 @@
       <meta property="og:image" content="{{ site.base_url }}{{ page.image }}">
       <meta name="twitter:card" content="summary_large_image">
     {% endif %}
+    <meta property="og:site_name" content="Can you handle it? – Atea eShop">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% if site.prevent_crawling %}
