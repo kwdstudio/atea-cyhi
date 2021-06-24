@@ -2,8 +2,8 @@
 
 base_url: https://cyhi.kwdstudio.se
 assets_base_url: ""
-prevent_crawling: true
 google_analytics_id:
+prevent_crawling: false
 permalink: /:path
 collections:
   videos:
