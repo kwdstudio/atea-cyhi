@@ -61,4 +61,15 @@ $component-base: ".#{$component-name}";
   &-tonedDown {
     font-weight: normal;
   }
+
+  // Element: Label
+  &-label {
+    @include typography($inter, deci-gentle, normal);
+    text-transform: uppercase;
+    font-weight: $black-font-weight;
+    @include styles-from-map((
+      margin-bottom: $spacing-pico-gentle,
+    ));
+    color: #003D52;
+  }
 }
