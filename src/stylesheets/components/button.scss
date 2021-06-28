@@ -43,7 +43,7 @@ $component-base: ".#{$component-name}";
   // ---------------------------------------------------------------------------
   &--inverted {
     color: color(white);
-    border: 1px solid color(white);
+    border-color: color(white);
 
     &:hover {
       color: color(white);
@@ -67,11 +67,18 @@ $component-base: ".#{$component-name}";
   &--solidInverted {
     color: #011E2A;
     background: color(white);
-    border: 1px solid color(white);
+    border-color: color(white);
     font-weight: $bold-font-weight;
 
     &:hover {
       color: #011E2A;
     }
+  }
+
+  // Variant: Video
+  // ---------------------------------------------------------------------------
+  &--video {
+    border: 0;
+    padding-right: 0;
   }
 }

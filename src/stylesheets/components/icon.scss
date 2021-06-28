@@ -1,0 +1,16 @@
+//
+// Component: Icon
+// =============================================================================
+
+$component-name: "Icon";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  display: inline-block;
+
+  height: 2em;
+  margin-top: -.4em;
+  margin-right: .3em;
+
+  vertical-align: text-top;
+}
