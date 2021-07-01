@@ -4,12 +4,14 @@ layout: default
 
 <div class="Wrapper">
   <div class="Video Video--large Video--inverted">
-    {%
-      include page_video_youtube.html
-      src=page.src
-      title=page.title
-      variant="Media--bordered"
-    %}
+    <div class="Video-media">
+      {%
+        include page_video_youtube.html
+        src=page.src
+        title=page.title
+        variant="Media--bordered"
+      %}
+    </div>
     <h1 class="Video-heading">{{ page.title }}</h1>
     <div class="Video-description">{{ page.content | markdownify }}</div>
   </div>
