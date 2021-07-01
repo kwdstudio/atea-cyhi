@@ -1,12 +1,13 @@
 <div class="Grid Grid--paddedVertical Grid--padded Grid--verticalCenter Grid--compensatePadded Video Video--inverted">
   {% for video in site.videos %}
     <div class="Grid-item Grid-item-m--12-of-24 Video-media">
-      {%
-        include page_video_youtube.html
-        src=video.src
-        title=video.title
-        variant="Media--bordered"
-      %}
+      <div class="Media Media--bordered">
+        <div class="Media-mediaWrapper">
+          <a href="{{ video.url }}">
+            <img src="https://i.ytimg.com/vi/{{ video.youtube_id }}/maxresdefault.jpg" alt="">
+          </a>
+        </div>
+      </div>
     </div>
     <div class="Grid-item Grid-item-m--12-of-24">
       <h2 class="Video-heading"><a class="Video-headingLink" href="{{ video.url }}">{{ video.title }}</a></h2>
