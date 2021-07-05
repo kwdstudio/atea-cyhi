@@ -12,12 +12,23 @@ $component-base: ".#{$component-name}";
   // Element: Media
   // ---------------------------------------------------------------------------
   &-media {
-
+    #{$component-base}--large & {
+      @include styles-from-map((
+        margin-bottom: $spacing-base-gentle,
+      ));
+    }
   }
 
   // Element: Heading
   // ---------------------------------------------------------------------------
   &-heading {
+    @include typography($inter, deca-steep, normal);
+    font-weight: $black-font-weight;
+
+    #{$component-base}--large & {
+      @include typography($inter, kilo-steep, tight);
+    }
+
     #{$component-base}--inverted & {
       color: color(white);
     }
@@ -34,6 +45,18 @@ $component-base: ".#{$component-name}";
   // Element: Description
   // ---------------------------------------------------------------------------
   &-description {
+    @include typography($inter, deci-gentle, loose);
+    @include styles-from-map((
+      margin-top: $spacing-micro-gentle,
+    ));
+
+    #{$component-base}--large & {
+      @include typography($inter, base-gentle, loose);
+      @include styles-from-map((
+        margin-top: $spacing-milli-gentle,
+      ));
+    }
+
     #{$component-base}--inverted & {
       color: color(white);
     }
