@@ -17,8 +17,6 @@ function loop() {
     Array.prototype.forEach.call(elementsToShow, function(element){
       if (isElementInViewport(element)) {
         element.classList.add('AnimateOnScroll--isVisible');
-      } else {
-        element.classList.remove('AnimateOnScroll--isVisible');
       }
     });
 
