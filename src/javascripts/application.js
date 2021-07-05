@@ -33,7 +33,6 @@ function isElementInViewport(el) {
     el = el[0];
   }
   var rect = el.getBoundingClientRect();
-  console.log(document.documentElement.clientHeight);
 
   return (
     (rect.top <= 0
