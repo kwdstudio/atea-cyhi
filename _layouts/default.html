@@ -25,6 +25,16 @@
       <meta name="robots" content="noindex, nofollow">
     {% endif %}
 
+    {% unless site.google_analytics_id == "" %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics_id }}');
+      </script>
+    {% endunless %}
+
     <link rel="stylesheet" href="{{ site.assets_base_url }}/stylesheets/main.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="canonical" href="{{ site.base_url }}{{ page.url }}">
@@ -48,13 +58,5 @@
     </div>
 
     <script src="{{ site.assets_base_url }}/javascripts/application.js" async></script>
-
-    {% unless site.google_analytics_id == "" %}
-      <script>
-        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-        ga('create','{{ site.google_analytics_id }}','auto');ga('send','pageview')
-      </script>
-      <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    {% endunless %}
   </body>
 </html>
