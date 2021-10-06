@@ -11,3 +11,23 @@
 Edit Sass/JavaScript files in the `src/` directory. The browser will auto-reload when changes are detected.
 
 Committing will take a bit longer than usual, as production-ready CSS/JS will be built automatically using a git hook.
+
+## Deploy
+
+### Production
+
+Production deployment is as easy as pushing to `main`.
+
+### Staging
+
+First, run `npm run build:staging` to build the site to `_site` with the config for staging.
+
+Remove `.html` extensions with the following command in the terminal:
+
+```
+find _site/ -type f ! -iname 'index.html' -iname '*.html' -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
+```
+
+Also rename `_site/hthi/hthi.html` to `_site/hthi/index.html`.
+
+Manually upload the contents (or only the changed/added files) of `_site` to the bucket on S3.
