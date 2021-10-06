@@ -45,6 +45,8 @@ $component-base: ".#{$component-name}";
     color: color(white);
     border-color: color(white);
 
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+
     &:hover {
       color: color(white);
     }
