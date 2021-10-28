@@ -22,12 +22,4 @@ Production deployment is as easy as pushing to `main`.
 
 First, run `npm run build:staging` to build the site to `_site` with the config for staging.
 
-Remove `.html` extensions with the following command in the terminal:
-
-```
-find _site/ -type f ! -iname 'index.html' -iname '*.html' -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
-```
-
-Also rename `_site/hthi/hthi.html` to `_site/hthi/index.html`.
-
 Manually upload the contents (or only the changed/added files) of `_site` to the bucket on S3.

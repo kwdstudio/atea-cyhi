@@ -2,11 +2,11 @@ base_url: http://atea-cyhi-staging.s3-website.eu-north-1.amazonaws.com
 assets_base_url: http://atea-cyhi-staging.s3-website.eu-north-1.amazonaws.com
 google_analytics_id: ""
 prevent_crawling: true
-permalink: /:path
+permalink: /:path:output_ext
 collections:
   articles:
     output: true
-    permalink: /artiklar/:path
+    permalink: /artiklar/:path:output_ext
   videos:
     output: true
-    permalink: /hthi/:path
+    permalink: /hthi/:path:output_ext
