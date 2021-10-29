@@ -1,15 +1,17 @@
 ---
 layout: article
 title: "Surface: snabbfilen till produktivitet"
-description: "Oavsett vad du jobbar med, så är du förmodligen på jakt efter knep som gör dig snabbare och bättre. Här kommer den dåliga nyheten: Extrema mängder kaffe är inte svaret. Men det finns lösningar, som tar dig en god bit på vägen mot det flexibla, produktiva, bekväma arbetslivet. Det handlar inte om göra-listor eller lunch-yoga, utan om rätt utrustning. Surface-familjen är en produktserie som ger dig alla förutsättningar att vara effektiv och produktiv — var du än befinner dig."
+description: "Oavsett vad du jobbar med, så är du förmodligen på jakt efter knep som gör dig snabbare och bättre. Här kommer den dåliga nyheten: Extrema mängder kaffe är inte svaret. Men det finns lösningar, som tar dig en god bit på vägen mot det flexibla, produktiva, bekväma arbetslivet."
 image: "/images/articles/surface-laptop.jpg"
 intro_heading: "Surface: snabbfilen till produktivitet"
-intro_lead: "<p>Oavsett vad du jobbar med, så är du förmodligen på jakt efter knep som gör dig snabbare och bättre. Här kommer den dåliga nyheten: Extrema mängder kaffe är inte svaret. Men det finns lösningar, som tar dig en god bit på vägen mot det flexibla, produktiva, bekväma arbetslivet. Det handlar inte om göra-listor eller lunch-yoga, utan om rätt utrustning. Surface-familjen är en produktserie som ger dig alla förutsättningar att vara effektiv och produktiv — var du än befinner dig.</p>"
+intro_lead: "<p>Oavsett vad du jobbar med, så är du förmodligen på jakt efter knep som gör dig snabbare och bättre. Här kommer den dåliga nyheten: Extrema mängder kaffe är inte svaret. Men det finns lösningar, som tar dig en god bit på vägen mot det flexibla, produktiva, bekväma arbetslivet.</p>"
 ---
 {%
   include page_image.html
   src="/images/articles/surface-laptop.jpg"
 %}
+
+Det handlar inte om göra-listor eller lunch-yoga, utan om rätt utrustning. Surface-familjen är en produktserie som ger dig alla förutsättningar att vara effektiv och produktiv — var du än befinner dig.
 
 ## Jobba var du vill
 
@@ -21,11 +23,11 @@ A0 är exakt en kvadratmeter papper. Om du viker denna fyra gånger så blir 
 
 ## Tillbehör som gör dig effektiv
 
-[Surface Audio-lurarna](https://www.atea.se/eshop/campaigns/group-microsoft/surface-familjen) skyddar mot störande ljud, och får dig att låta bra vad du än säger (nästan). Finns som earbuds och over ear, beroende på hur ostörd du vill vara. Arc Mouse har vi redan talat om, och med [Type Cover](https://www.atea.se/eshop/campaigns/group-microsoft/surface-familjen) förvandlas din Surface-platta till en bärbar dator.
+[Surface Audio-lurarna](https://www.atea.se/eshop/products/hemmabio-och-hifi/tillbehor-1/horlurar-och-headsets/?filters=S_microsoft+surface%7EA4_788) skyddar mot störande ljud, och får dig att låta bra vad du än säger (nästan). Finns som [earbuds](https://www.atea.se/eshop/product/microsoft-surface-earbuds/?prodid=2105596) och [over ear](https://www.atea.se/eshop/manufacturers/microsoft/hemmabio-och-hifi/?filters=M_137_356_A~A2_18~N_Headphones), beroende på hur ostörd du vill vara. Arc Mouse har vi redan talat om, och med [Type Cover](https://www.atea.se/eshop/products/?filters=S_surface%20cover) förvandlas din Surface-platta till en bärbar dator.
 
 ## Skissa, rita, skriva?
 
-[Penna](https://www.atea.se/eshop/campaigns/group-microsoft/surface-familjen), touch, mus — vad passar tillfället och uppgiften? Vill du skissa och rita, flytta runt block, klicka med precision? Surface fungerar för alla arbetsuppgifter, hur du än vill jobba. [Arc Mouse](https://www.atea.se/eshop/campaigns/group-microsoft/surface-familjen) är våldsamt snygg, men inte bara det: Den är dessutom en lättviktare som är enkel att ta med. Tryck till den med handen, så blir den platt och smyger lätt ner i väskan.
+[Penna](https://www.atea.se/eshop/products/komponenter-och-tillbehor/tangentbord-och-moss/pekenheter-och-ergonomiska-moss/?filters=S_surface+pen%7ESO_1_1%7EA4_412), touch, mus — vad passar tillfället och uppgiften? Vill du skissa och rita, flytta runt block, klicka med precision? Surface fungerar för alla arbetsuppgifter, hur du än vill jobba. [Arc Mouse](https://www.atea.se/eshop/products/?filters=S_arc%20mouse) är våldsamt snygg, men inte bara det: Den är dessutom en lättviktare som är enkel att ta med. Tryck till den med handen, så blir den platt och smyger lätt ner i väskan.
 
 ## Olika modeller för olika behov
 
