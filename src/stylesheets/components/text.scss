@@ -10,7 +10,7 @@ $component-name: "Text";
 $component-base: ".#{$component-name}";
 
 #{$component-base} {
-  h2 {
+  > h2 {
     @include styles-from-map((
       margin-top: $spacing-deca-gentle,
       margin-bottom: $spacing-milli-gentle,
@@ -23,7 +23,7 @@ $component-base: ".#{$component-name}";
     }
   }
 
-  h3 {
+  > h3 {
     @include styles-from-map((
       margin-top: $spacing-deca-gentle,
       margin-bottom: $spacing-micro-gentle,
@@ -32,9 +32,9 @@ $component-base: ".#{$component-name}";
     font-weight: $black-font-weight;
   }
 
-  h4,
-  h5,
-  h6 {
+  > h4,
+  > h5,
+  > h6 {
     @include typography($inter, base-gentle, normal);
     @include styles-from-map((
       margin-top: $spacing-deca-gentle,

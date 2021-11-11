@@ -30,3 +30,11 @@ Bussiga brorsan som alltid ställer upp. Stabil och pålitlig bjuder han på per
 Den som alltid känner på ytterdörren en extra gång för att kontrollera att den är låst, som propsar på ett hemlarm i toppklass och aldrig skulle drömma om att knäppa upp säkerhetsbältet innan planet står helt stilla. Pappa Surface Laptop 4 står för säkerhet du kan lita på. Han skyddar filer och foton med integrerad OneDrive-molnlagring och låter dig arbeta säkert på olika enheter. Trots hans rigida säkerhetstänk är han en stilguru med fart. Elegant design, ultratunn och lätt, och betydligt längre batteritid än förut. Självklart har Pappa Surface också pekskärm.
 
 Vem i Surface-familjen passar du ihop med? [Ta reda på mer här!](https://www.atea.se/eshop/campaigns/group-microsoft/surface-familjen)
+
+{%
+  include page_teaser.html
+  src="/images/articles/product-surface-laptop-4.jpg"
+  heading="Surface Laptop 4"
+  body="Gör allt med en perfekt balans av elegant design, hastighet, uppslukande ljud och lång batteritid."
+  link="https://www.atea.se/eshop/product/microsoft-surface-laptop-4/?prodid=2154292"
+%}

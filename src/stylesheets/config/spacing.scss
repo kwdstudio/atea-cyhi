@@ -57,6 +57,7 @@ $spacing-nano-gentle:  map-get($spacing, spacing-nano-gentle);
 $spacing-pico-steep:   map-get($spacing, spacing-pico-steep);
 $spacing-pico-gentle:  map-get($spacing, spacing-pico-gentle);
 
+$spacing-deca-gentle-neg:  inverse-map-values($spacing-deca-gentle);
 $spacing-base-steep-neg:   inverse-map-values($spacing-base-steep);
 $spacing-centi-gentle-neg: inverse-map-values($spacing-centi-gentle);
 $spacing-milli-gentle-neg: inverse-map-values($spacing-milli-gentle);

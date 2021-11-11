@@ -1,0 +1,49 @@
+@import "../helpers/typography";
+@import "../config/spacing";
+
+//
+// Component: Teaser
+// =============================================================================
+$component-name: "Teaser";
+$component-base: ".#{$component-name}";
+
+#{$component-base} {
+  background: rgb(245, 245, 246);
+  @include styles-from-map((
+    margin-top: $spacing-kilo-gentle,
+    padding: $spacing-deca-gentle,
+  ));
+
+  @include respond-to(m) {
+    @include styles-from-map((
+      margin-left: $spacing-deca-gentle-neg,
+      margin-right: $spacing-deca-gentle-neg,
+    ));
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  // Element: Media
+  // ---------------------------------------------------------------------------
+  &-media {
+    float: right;
+    width: 40%;
+    @include styles-from-map((
+      margin-left: $spacing-base-gentle,
+    ));
+  }
+
+  // Element: Heading
+  // ---------------------------------------------------------------------------
+  &-heading {
+    @include styles-from-map((
+      margin-bottom: $spacing-micro-gentle,
+    ));
+    @include typography($inter, deca-gentle, normal);
+    font-weight: $black-font-weight;
+  }
+}
