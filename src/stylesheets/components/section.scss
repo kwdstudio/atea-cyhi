@@ -49,6 +49,10 @@ $component-base: ".#{$component-name}";
 
     object-fit: cover;
     object-position: 50% 80%;
+
+    #{$component-base}--bottomImage & {
+      object-position: 50% 100%;
+    }
   }
 
   // Element: Content
